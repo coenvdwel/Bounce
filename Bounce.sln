@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bounce", "Bounce\Bounce.csproj", "{C960C401-EF9B-40DA-AB3A-A3E1C445D2B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C960C401-EF9B-40DA-AB3A-A3E1C445D2B6}.Debug|x86.ActiveCfg = Debug|x86
+		{C960C401-EF9B-40DA-AB3A-A3E1C445D2B6}.Debug|x86.Build.0 = Debug|x86
+		{C960C401-EF9B-40DA-AB3A-A3E1C445D2B6}.Release|x86.ActiveCfg = Release|x86
+		{C960C401-EF9B-40DA-AB3A-A3E1C445D2B6}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

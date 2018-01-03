@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Bounce</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#" id="connect" onclick="connect()">Step 1: Connect</a></li>
+      <li><a href="#" id="sendMessage" onclick="sendMessage()">Step 2: Send message</a></li>
+      <li><span id="receiveMessage">Step 3: Receive message (trigger from server console)</span></li>
+    </ul>
+
+    <strong id="status">Awaiting input...</strong>
+
+    <script type="text/javascript">
+      function connect() {
+        document.getElementById("status").innerHTML = "Connecting...";
+        var ws = new WebSocket("ws://localhost:8080/service");
+
+        ws.onopen = function () {
+          document.getElementById("status").innerHTML = "Connected.";
+        };
+
+        ws.onmessage = function (e) {
+          document.getElementById("status").innerHTML = "Received message: " + e.data;
+        };
+
+        ws.onclose = function () {
+          document.getElementById("status").innerHTML = "Disconnected.";
+        };
+      }
+
+      function sendMessage() {
+        document.getElementById("status").innerHTML = "Sending...";
+        ws.send("Hello World");
+        document.getElementById("status").innerHTML = "Sent message (check server console).";
+      }
+    </script>
+  </body>
+</html>

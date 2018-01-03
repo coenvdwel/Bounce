@@ -1,0 +1,5 @@
+C:\code\coens-bounce\Bounce\Bounce\bin\Debug\Bounce.exe
+C:\code\coens-bounce\Bounce\Bounce\bin\Debug\Bounce.pdb
+C:\code\coens-bounce\Bounce\Bounce\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\code\coens-bounce\Bounce\Bounce\obj\x86\Debug\Bounce.exe
+C:\code\coens-bounce\Bounce\Bounce\obj\x86\Debug\Bounce.pdb
